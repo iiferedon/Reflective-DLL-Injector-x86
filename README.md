@@ -8,4 +8,3 @@ Barebones loader I made in in like an hour.
 - Erases PE Headers
 - Erases Entrypoint
 
--- Injection method by that Osiris guy
