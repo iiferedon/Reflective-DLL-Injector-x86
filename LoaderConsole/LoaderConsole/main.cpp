@@ -13,7 +13,6 @@
 #pragma comment(lib, "advapi32.lib") 
 #include <iostream>
 #include "inject.h"
-#include "Auth.hpp"
 
 
 typedef HMODULE(WINAPI* LoadLibraryFunc)(LPCWSTR);
