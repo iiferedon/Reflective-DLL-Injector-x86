@@ -41,7 +41,7 @@ bool _fastcall Streaming::stream_dll()
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(1222);
 
-    if (inet_pton(AF_INET, "170.64.138.117", &(serverAddr.sin_addr)) <= 0)
+    if (inet_pton(AF_INET, "serveriphere", &(serverAddr.sin_addr)) <= 0)
     {
         std::cerr << "Failed to convert the server IP address." << std::endl;
         closesocket(clientSocket);
