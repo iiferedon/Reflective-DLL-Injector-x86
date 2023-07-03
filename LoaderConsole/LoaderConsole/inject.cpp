@@ -74,7 +74,7 @@ int _fastcall Inject()
 {
     HANDLE processSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
     if (processSnapshot == INVALID_HANDLE_VALUE)
-        return 1;
+        return 0;
 
     HANDLE process = NULL;
     PROCESSENTRY32W processInfo;
@@ -91,7 +91,7 @@ int _fastcall Inject()
     CloseHandle(processSnapshot);
 
     if (!process)
-        return 1;
+        return 0;
 
     PIMAGE_NT_HEADERS ntHeaders = (PIMAGE_NT_HEADERS)(Streaming::binary_mem + ((PIMAGE_DOS_HEADER)Streaming::binary_mem)->e_lfanew);
 
