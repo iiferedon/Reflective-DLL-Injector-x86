@@ -7,5 +7,8 @@ Barebones loader to paste
 - Injects into x86 process
 - Erases PE Headers
 - Erases Entrypoint
-- Only works on games that have little to no anticheat, and where you can get a handle to the process with no issues.
+
+#Note
+- Needs to be able to get a handle to the process
+- Uses CRT, I will rewrite with NT equivalent soon
 
