@@ -1,7 +1,7 @@
 import argparse
 
 parser = argparse.ArgumentParser(
-    description='PE2HEX - PE executable to byte array converter')
+    description='dlltobytearray')
 parser.add_argument('input', type=str,
                     help='Input PE filename or full path')
 parser.add_argument('--out', default='output.txt', type=str,
