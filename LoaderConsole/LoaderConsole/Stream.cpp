@@ -10,7 +10,7 @@
 const uint8_t* Streaming::binary_mem = nullptr;
 const size_t binary_size = 0;
 const size_t bufferSize = 1906000; //Change to size of DLL
-const BYTE key[] = { 0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE, 0xF0 }; //Must be same as server you braindead skid
+const BYTE key[] = { 0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE, 0xF0 }; //Must be same as server bud
 
 void _fastcall decryptData(BYTE* data, size_t dataSize, const BYTE* key, size_t keySize)
 {
