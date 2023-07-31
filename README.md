@@ -10,5 +10,5 @@ Barebones loader
 
 #Note
 - Needs to be able to get a handle to the process
-- Uses CRT, I will rewrite with NT equivalent soon
+- Uses CRT
 
